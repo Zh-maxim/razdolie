@@ -91,3 +91,20 @@ brnJourneyTour.onclick = () => {
     cultOffersUp.classList.remove('generalOffersToggleUp')
     ecoOffersUp.classList.remove('generalOffersToggleUp')
 }
+let btnToUp = document.querySelector('.btnToUp')
+scrollCount = window.scrollY;
+if (scrollCount == 0) {
+    btnToUp.style.display = 'none'
+}
+addEventListener("scroll", () => {
+    scrollCount = window.scrollY;
+    if (scrollCount == 0) {
+        btnToUp.style.display = 'none'
+    }
+    else {
+        btnToUp.style.display = "flex"
+    }
+})
+btnToUp.onclick = () => {
+    window.scrollTo(0, 0);
+}
