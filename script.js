@@ -7,8 +7,8 @@ window.onload = () => {
     let loaderDistract = () => {
         svgLoader.style.display = "none"
     }
-    setTimeout(opacityDisapear, 2000)
-    setTimeout(loaderDistract, 2500)
+    setTimeout(opacityDisapear, 1000)
+    setTimeout(loaderDistract, 1500)
 }
 
 let slider = document.querySelector(".sliderDown")
