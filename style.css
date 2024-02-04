@@ -1,0 +1,1027 @@
+.svgLoader{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100
+}
+.spinner {
+  animation: rotator 1.4s linear infinite;
+}
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+.path {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+@keyframes colors {
+  0% {
+    stroke: #ed6950;
+  }
+  25% {
+    stroke: #ffc74a;
+  }
+  50% {
+    stroke: #606f81;
+  }
+  75% {
+    stroke: #ffc74a;
+  }
+  100% {
+    stroke: #ed6950;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    width: auto;
+    height: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+._mainBlock1 {
+    max-width: 1862px;
+    min-height: auto;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* min-width: 1450px;
+    max-width: 1450px; */
+}
+
+._mainBlock {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 1450px;
+    max-width: 1450px;
+}
+
+.introBack {
+    min-width: 100%;
+    max-height: 977px;
+    min-height: 977px;
+    background-image: url(images/forest.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.headerCont1 {
+    width: 100%;
+    height: 60%;
+    padding: 5px 0 5px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.nameTag {
+    width: 150px;
+    height: 100%;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.ograd {
+    width: 1px;
+    height: 30px;
+    background: white;
+}
+
+.langBtn {
+    width: 48px;
+    height: 48px;
+    font-size: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.headerCont2 {
+    width: 100%;
+    height: 60%;
+    padding: 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pops {
+    width: 150px;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pops:hover {
+    color: #ffc74a;
+    transition: 0.5s;
+}
+
+.pops:not(:hover) {
+    color: white;
+    transition: 0.5s;
+}
+
+.trvls {
+    width: 100px;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trvls:hover {
+    color: #ffc74a;
+    transition: 0.5s;
+}
+
+.trvls:not(:hover) {
+    color: white;
+    transition: 0.5s;
+}
+
+.cnct {
+    width: 200px;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cnct:hover {
+    color: #ffc74a;
+    transition: 0.5s;
+}
+
+.cnct:not(:hover) {
+    color: white;
+    transition: 0.5s;
+}
+
+.ssilkiYakor > a {
+    color: white;
+    text-decoration: none;
+}
+
+.ssilkiYakor > a:hover {
+    text-decoration: underline;
+}
+
+.entranceBlock {
+    width: auto;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.entranceLine1 {
+    width: 100%;
+    height: 111px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 450%;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.entranceLine2 {
+    width: 100%;
+    height: 111px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    opacity: 0.5;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.btnEntr {
+    width: 300px;
+    height: 60px;
+    border-radius: 90px;
+    background: #ffc74a;
+    cursor: pointer;
+    color: #b98000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 450;
+    margin: 0 auto;
+    border-bottom: 2px solid #b98000;
+}
+
+.entranceLine3 {
+    width: 100%;
+    height: 111px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 100px;
+}
+
+.sliderUp {
+    width: 800px;
+    height: 413px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 150px;
+    border-radius: 20px;
+}
+
+.sliderDown {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: 0.65s;
+}
+
+.naprSlides {
+    text-decoration: none;
+}
+
+.slide1 {
+    min-width: 800px;
+    height: 100%;
+    background-image: url(images/altai.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide2 {
+    min-width: 800px;
+    height: 100%;
+    background-image: url(images/baikal.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide3 {
+    min-width: 800px;
+    height: 100%;
+    background-image: url(images/karelya.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.controllersUp {
+    width: 73px;
+    height: 25px;
+    z-index: 20;
+    position: relative;
+    top: -28px;
+    left: calc(50% - 37px);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.cont {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: #ffc74a;
+    transition: 1s;
+    border-radius: 100%;
+    border: 1px solid #606f81;
+}
+
+.redCont {
+    background: #ed6950;
+}
+
+.discriptionPic1 {
+    padding-top: ;
+    width: 100%;
+    height: 50px;
+    font-size: 35px;
+    font-weight: 900;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: calc(20% - 25px);
+}
+
+.discriptionPic2 {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 300;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffc74a;
+    font-weight: 800;
+}
+
+.whereWanna {
+    height: 100px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 234px;
+    ;
+    color: #606f81;
+    font-size: 35px;
+    font-weight: 450;
+}
+
+.selectCity {
+    height: 50px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selectorJourney1 {
+    width: 50%;
+    height: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: end;
+    color: white;
+}
+
+.brnJourney {
+    width: 110px;
+    height: 33px;
+    background: rgb(255, 199, 74);
+    border-radius: 90px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.redTrvl {
+    background: #ffc74a !important;
+    color: white !important;
+}
+
+.greyTrvl {
+    background: #ebeef4 !important;
+    color: rgb(189, 200, 217) !important;
+}
+
+.btnJourHov {
+    width: 150px;
+    margin-left: 15px;
+    color: rgb(189, 200, 217);
+    background: #ebeef4;
+    cursor: pointer;
+}
+
+.travelLineNechet {
+    height: 200px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    color: #c0c2d1;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.travelLineChet {
+    height: 100px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    color: #c0c2d1;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.OfferPic {
+    width: 300px;
+    height: 100%;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.nadpisPic {
+    display: none;
+    position: ;
+    width: auto;
+    height: auto;
+    top: 10px;
+    left: calc(50% - 50px);
+    color: white;
+}
+
+.OfferBtn {
+    width: 300px;
+    height: 50px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.samaBtn {
+    width: 160px;
+    height: 40px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    background: #ed6950;
+    border-radius: 90px;
+    border-bottom: 1.9px solid #674b0b;
+}
+
+.samaBtn {
+    color: #fcfcfc;
+    text-decoration: none !important;
+}
+
+.OfferBtn {
+    text-decoration: none;
+}
+
+.samaya {
+    background: #ffc74a;
+}
+
+.desc {
+    text-decoration: none;
+}
+
+.cityName {
+    height: 90px;
+    background: #f2f2f2;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: flex-end;
+    font-size: 30px;
+    color: #606f81;
+    font-weight: 500;
+}
+
+.cityCard {
+    height: auto;
+    background: #f2f2f2;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 20px;
+}
+
+.cityCardSide {
+    width: 47%;
+    height: 100%;
+}
+
+.NameOfArticle {
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+    color: #f8c759;
+    font-weight: 500;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+
+.paragraphOfCity {
+    width: 100%;
+    height: auto;
+    padding: 0 0 20px 0;
+    color: #606f81;
+    font-weight: 400;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.85;
+}
+
+.btnsConUp {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.btnConnect {
+    width: 200px;
+    height: 50px;
+    border-radius: 90px;
+    background: #ffc74a;
+    cursor: pointer;
+    color: #b98000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 450;
+    border-bottom: 2px solid #b98000;
+}
+
+.priceOfJourneyBtn {
+    width: 150px;
+    height: 50px;
+    border-radius: 90px;
+    background: #ed6950;
+    color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 450;
+    border-bottom: 2px solid #b98000;
+    margin-left: 20px;
+}
+
+.picOfPlace {
+    min-width: 425px;
+    height: 425px;
+    border: 1px solid;
+    margin: 20px 0 0 20px;
+    box-shadow: 45px 45px 0px #ed6950;
+    z-index: 25;
+    border: 1px solid black;
+}
+
+.disabledPic {
+    display: none;
+}
+
+.NameOfPlace {
+    max-width: 213px;
+    height: 55%;
+    font-size: 140px;
+    color: #ffc74a;
+    position: relative;
+    left: 6%;
+    top: -100px;
+    z-index: 0;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.contactsEnt {
+    min-height: 650px;
+    background-image: url(images/DarkGrass.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.wrapOfContacts {
+    height: 150px;
+    color: white;
+}
+
+.CanContact {
+    height: 70px;
+    color: white;
+    font-weight: 700;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+.byElMail {
+    height: 50px;
+    justify-content: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.contactsLinks {
+    color: #ffc74a;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contactsLinks:hover {
+    text-decoration: underline;
+}
+
+.contactsLinks1 {
+    color: #ed6950;
+}
+
+.autoricals {
+    max-height: 260px;
+}
+
+.backName {
+    width: ;
+    !important min-height: 230px;
+    font-size: 200px;
+    color: #ffe09c;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.backRights {
+    width: auto;
+    min-height: 29px;
+    font-size: 25px;
+    color: #606f81;
+    left: calc(50% - 200px);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.generalOffersToggleUp {
+    display: block !important;
+}
+
+.noneBlocksToggle {
+    display: none;
+}
+
+._mainBlock {
+    max-width: 1300px;
+    min-width: 1300px;
+}
+
+.mediaFontsHead {
+    font-size: 22px;
+}
+
+.btnToUp {
+    opacity: 0.8;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 100%;
+    background: #ffc74a;
+    position: fixed;
+    left: calc(100% - 55px);
+    top: calc(100% - 55px);
+    cursor: pointer;
+    display: none;
+}
+
+.strelka {
+    width: 5px;
+    height: 29px;
+    background: #ed6950;
+    position: relative;
+    transform: rotate(45deg);
+    top: 10px;
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+}
+
+.numb1 {
+    transform: rotate(30deg);
+    left: 15px;
+}
+
+.numb2 {
+    transform: rotate(-30deg);
+    left: 23px;
+}
+
+.absoluteWindow {
+    background: rgba(0, 0, 0, 0.92);
+    position: fixed;
+    z-index: 30;
+    height: 100%;
+    transition: 1s;
+    width: 100%;
+    display: none;
+}
+
+.baikal {
+    background-image: url(images/baikalBig.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.zasnezhV {
+    background-image: url(images/altaiBig.jpg);
+    background-repeat: no-repeat;
+    background-position: 40% 15%;
+    background-size: cover;
+}
+
+.ledHolmi {
+    background-image: url(images/kareliyaBig.jpg);
+    background-repeat: no-repeat;
+    background-position: 15%;
+    background-size: cover;
+}
+
+.peter {
+    background-image: url(images/piterBig.jpg);
+    background-repeat: no-repeat;
+    background-position: 15%;
+    background-size: cover;
+}
+
+.komi {
+    background-image: url(images/komiBig.jpg);
+    background-repeat: no-repeat;
+    background-position: ;
+    background-size: cover;
+}
+
+.astrahan {
+    background-image: url(images/astrahanBig.jpg);
+    background-repeat: no-repeat;
+    background-position: ;
+    background-size: cover;
+}
+
+.zabayk {
+    background-image: url(images/zabaykalieBig.jpg);
+    background-repeat: no-repeat;
+    background-position: 75%;
+    background-size: cover;
+}
+
+.yakut {
+    background-image: url(images/yakutiyaBig.jpg);
+    background-repeat: no-repeat;
+    background-position: ;
+    background-size: cover;
+}
+
+.archan {
+    background-image: url(images/archangelskBig.jpg);
+    background-repeat: no-repeat;
+    background-position: ;
+    background-size: cover;
+}.ulanUde {
+    background-image: url(images/ulanudeBig.jpg);
+    background-repeat: no-repeat;
+    background-position: 15%;
+    background-size: cover;
+}.kalinin {
+    background-image: url(images/kaliningradBig.jpg);
+    background-repeat: no-repeat;
+    background-position: 15%;
+    background-size: cover;
+}.novg {
+    background-image: url(images/novgorodBig.jpg);
+    background-repeat: no-repeat;
+    background-position: 45%;
+    background-size: cover;
+}.kamch {
+    background-image: url(images/kamchatkaBig.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}.volg {
+    background-image: url(images/volgogradBig.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+.sahal {
+    background-image: url(images/sahalinBig.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+@media (max-width: 1315px) {
+    ._mainBlock {
+        max-width: 1201px !important;
+        min-width: 1200px !important;
+    }
+    .mediaFontsHead {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1313px) {
+    ._mainBlock {
+        max-width: 1200px;
+        min-width: 1200px;
+    }
+    .mediaFontsHead {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1210px) {
+    ._mainBlock {
+        max-width: 1000px !important;
+        min-width: 1000px !important;
+    }
+    .CanContact {
+        font-size: 60px;
+    }
+}
+@media (max-width: 1010px) {
+    ._mainBlock {
+        max-width: 900px !important;
+        min-width: 900px !important;
+    }
+}
+@media (max-width: 950px) {
+    .paragraphOfCity {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 910px) {
+    .paragraphOfCity {
+        font-size: 16px;
+    }
+}
